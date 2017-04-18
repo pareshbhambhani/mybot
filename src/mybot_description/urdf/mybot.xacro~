@@ -32,7 +32,7 @@
     <visual name='chassis_visual'>
       <origin xyz="0 0 0.1" rpy=" 0 0 0"/>
       <geometry>
-        <mesh filename="$(find mybot_description)/meshes/chassis.dae"/>
+        <mesh filename="package://mybot_description/meshes/chassis.dae"/>
       </geometry>
     </visual>
 
@@ -59,6 +59,7 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
+	<material name="Black" />
     </visual>
   </link>
 
@@ -72,10 +73,11 @@
       </geometry>
     </collision>
     <visual name="left_wheel_visual">
-      <origin xyz="0 0.01 0" rpy="0 1.5707 1.5707"/>
+      <origin xyz="0 0.02 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+	<material name="orange"/>
     </visual>
     <inertial>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
@@ -97,7 +99,7 @@
       </geometry>
     </collision>
     <visual name="right_wheel_visual">
-      <origin xyz="0 -0.01 0" rpy="0 1.5707 1.5707"/>
+      <origin xyz="0 -0.02 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
