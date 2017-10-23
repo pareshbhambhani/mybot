@@ -1,2 +1,2 @@
-# mybot
-URDF model for a differential drive Robot in Gazebo  with ROS navigation
+# mybot_ws
+URDF model for Gazebo integrated with ROS
